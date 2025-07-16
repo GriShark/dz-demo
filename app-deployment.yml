@@ -21,3 +21,7 @@ spec:
             limits:
               memory: "256Mi"
               cpu: "100m"
+      volumes:
+        - name: app-config
+          configMap:
+            name: app-config
